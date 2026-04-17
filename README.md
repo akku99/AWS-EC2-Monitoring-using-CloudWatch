@@ -40,3 +40,5 @@ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -m ec2 -a 
 	}
 }
 ```
+
+<img width="1575" height="556" alt="Screenshot 2026-04-17 170051" src="https://github.com/user-attachments/assets/c2ce9426-ef34-478e-8e77-cdd5f1642541" />
