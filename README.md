@@ -10,6 +10,13 @@ Step 3: Create an EC2 Instance, Attach the role created in Step 1 and Add the co
 
 Commands that needs to be added in Userdata Section:
 
+<picture>
+ <source media="(prefers-color-scheme: dark)" srcset="YOUR-DARKMODE-IMAGE">
+ <source media="(prefers-color-scheme: light)" srcset="YOUR-LIGHTMODE-IMAGE">
+ <img alt="YOUR-ALT-TEXT" src="YOUR-DEFAULT-IMAGE">
+</picture>
+
+
 #!/bin/bash
 wget https://s3.amazonaws.com/amazoncloudwatch-agent/linux/amd64/latest/AmazonCloudWatchAgent.zip
 unzip AmazonCloudWatchAgent.zip
