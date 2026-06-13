@@ -1,4 +1,4 @@
-# **AWS EC2 Monitoring with Cloudwatch | Monitor Memory Utilization using CloudWatch**
+# 📊 **AWS EC2 Monitoring with Cloudwatch | Monitor Memory Utilization using CloudWatch**
 
 ## 🔹Steps:
 
@@ -6,7 +6,7 @@
 #### Step 2: Create a parameter in Systems Manger with the name "/alarm/AWS-CWAgentLinConfig" and store the value.
 #### Step 3: Create an EC2 Instance, Attach the role created in Step 1 and Add the commands in the Userdata Section.
 
-# 🔹Architecture Diagram
+## 🔹Architecture Diagram
 
 <img width="1183" height="491" alt="image" src="https://github.com/user-attachments/assets/30a96399-f23c-4671-ad85-dfb11a1f4d7b" />
 
@@ -20,13 +20,13 @@ sudo ./install.sh
 sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -c ssm:/alarm/AWS-CWAgentLinConfig -s
 ```
 
-## Check if EC2 Instance has CWAgent Installed or not:
+## 🔹Check if EC2 Instance has CWAgent Installed or not:
 
 ```
 sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -m ec2 -a status
 ```
 
-## Value for the SSM Parameter (/alarm/AWS-CWAgentLinConfig):
+## 🔹Value for the SSM Parameter (/alarm/AWS-CWAgentLinConfig):
 ```bash
 {
 	"metrics": {
